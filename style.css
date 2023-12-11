@@ -1,0 +1,108 @@
+.wrapper{
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.perfume-desktop{
+    display: none;
+}
+.perfume-mobile{
+   max-width: 92vw;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+}
+.card{
+    background-color: white;
+    width: fit-content;
+    max-width: 92vw;
+    padding: 1.6em;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+p{
+    font-size: 14px;
+    font-family: 'montserrat';
+    color: hsl(228, 12%, 48%);
+}
+h1{
+    font-family: 'fraunces';
+    color: hsl(212, 21%, 14%);
+    font-size: 30px;
+    line-height: 1em;
+}
+.subtitle{
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5em;
+    margin-bottom: 10px;
+}
+.name{
+    margin-bottom: 15px;
+}
+.desc{
+    margin-bottom: 25px;
+}
+.prices{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.new-price{
+    color: hsl(158, 36%, 37%);
+}
+.old-price{
+    height: fit-content;
+    text-decoration: line-through;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 1em 0;
+    border-radius: 7px;
+}
+button p{
+    color: white;
+}
+button .icon-cart{
+    width: fit-content;
+}
+
+@media only screen and (width > 580px){
+    .perfume-mobile{
+        display: none;
+    }
+    .perfume-desktop{
+        display: inline-block;
+        max-height: 410px;
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: 7px;
+    }
+    .wrapper{
+        flex-direction: row;
+    }
+    .card{
+        padding: 2em;
+        min-height: 410px;
+        max-width: 300px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-right-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    .subtitle{
+        margin-bottom: 20px;
+    }
+    .name{
+        margin-bottom: 20px;
+    }
+    .prices{
+        margin-bottom: 30px;
+    }
+}
